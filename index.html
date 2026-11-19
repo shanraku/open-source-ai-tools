@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101321">
+  <meta name="description" content="Discover useful AI tools for writing, coding, research, images, video and more. Compare free, freemium and paid tools in one open directory.">
+  <title>Open Source AI Tools — Discover tools. Create more.</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#directory">Skip to directory</a>
+  <header class="site-header">
+    <a class="brand" href="./" aria-label="Open Source AI Tools home">
+      <span class="brand-mark" aria-hidden="true">✳</span>
+      <span>Open<span class="brand-accent">Source</span><small>AI TOOLS DIRECTORY</small></span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="#directory">Explore</a>
+      <a href="#about">About</a>
+      <a class="nav-submit" href="https://github.com/shanraku/open-source-ai-tools/issues/new?template=tool_submission.yml">＋ Submit a tool</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-glow glow-one"></div><div class="hero-glow glow-two"></div>
+      <div class="hero-content">
+        <div class="eyebrow"><span class="pulse"></span> COMMUNITY-DRIVEN · OPEN DIRECTORY</div>
+        <h1>Find the right AI tool.<br><span>Make something amazing.</span></h1>
+        <p class="hero-copy">A growing collection of AI tools for curious minds, creators, builders and everyone in between.</p>
+        <a class="hero-cta" href="#directory">Explore the directory <span aria-hidden="true">↘</span></a>
+        <div class="hero-values"><span>✦ Free to explore</span><span>◈ Community submissions</span><span>⌘ Open source</span></div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <div class="core-card"><span class="core-symbol">✳</span><b>AI</b><small>FOR EVERYONE</small></div>
+        <span class="float-chip chip-a">✍ Writing</span><span class="float-chip chip-b">⌘ Coding</span><span class="float-chip chip-c">✧ Create</span>
+      </div>
+    </section>
+
+    <section class="directory-section" id="directory">
+      <div class="section-heading">
+        <div><div class="eyebrow dark-eyebrow">THE COLLECTION</div><h2>Explore AI tools</h2><p>Find a tool that fits the way you work.</p></div>
+        <span class="result-count" id="result-count" aria-live="polite">Loading tools…</span>
+      </div>
+      <div class="toolbar">
+        <label class="search-box"><span aria-hidden="true">⌕</span><input id="search-input" type="search" placeholder="Search tools, tasks or keywords…" autocomplete="off"><kbd>/</kbd></label>
+        <label class="select-wrap"><span class="sr-only">Sort tools</span><select id="sort-select"><option value="featured">Featured</option><option value="name">Name A–Z</option><option value="popular">Popular picks</option></select></label>
+      </div>
+      <div class="filter-row" aria-label="Filter by category" id="category-filters">
+        <button class="filter-chip active" data-category="All" aria-pressed="true">All tools</button>
+        <button class="filter-chip" data-category="Writing" aria-pressed="false">✍ Writing</button>
+        <button class="filter-chip" data-category="Coding" aria-pressed="false">⌘ Coding</button>
+        <button class="filter-chip" data-category="Image" aria-pressed="false">✧ Image</button>
+        <button class="filter-chip" data-category="Video" aria-pressed="false">▶ Video</button>
+        <button class="filter-chip" data-category="Research" aria-pressed="false">⌕ Research</button>
+        <button class="filter-chip" data-category="Productivity" aria-pressed="false">◈ Productivity</button>
+        <button class="filter-chip" data-category="Audio" aria-pressed="false">♫ Audio</button>
+      </div>
+      <div class="access-row">
+        <span>Pricing:</span>
+        <button class="access-chip active" data-access="All" aria-pressed="true">All</button>
+        <button class="access-chip" data-access="Free" aria-pressed="false">Free</button>
+        <button class="access-chip" data-access="Freemium" aria-pressed="false">Freemium</button>
+        <button class="access-chip" data-access="Paid" aria-pressed="false">Paid</button>
+      </div>
+      <div class="tool-grid" id="tool-grid" aria-live="polite"></div>
+      <div class="empty-state" id="empty-state" hidden><span>⌕</span><h3>No tools found</h3><p>Try another search or clear your filters.</p><button id="clear-filters" class="outline-button">Clear filters</button></div>
+      <p class="data-note">Pricing and availability can change. Always check the official tool website before signing up.</p>
+    </section>
+
+    <section class="submit-banner">
+      <div><div class="eyebrow">MAKE THIS DIRECTORY BETTER</div><h2>Know a tool we should add?</h2><p>Help the community discover something useful. Submissions are reviewed before listing.</p></div>
+      <a class="light-button" href="https://github.com/shanraku/open-source-ai-tools/issues/new?template=tool_submission.yml">Suggest a tool <span>↗</span></a>
+    </section>
+
+    <section class="about-section" id="about">
+      <div><div class="eyebrow dark-eyebrow">OUR PRINCIPLE</div><h2>Maximum freedom.<br><span>Minimum restrictions.</span></h2></div>
+      <p>Built for everyone. We believe useful technology should be easy to discover, transparent about its costs, and open to community improvement. This directory is independent and does not endorse or own the listed services.</p>
+    </section>
+  </main>
+  <footer><a class="footer-brand" href="./">✳ OpenSource AI Tools</a><span>Made for curious minds, everywhere.</span><a href="https://github.com/shanraku/open-source-ai-tools">Contribute on GitHub ↗</a></footer>
+</body>
+</html>
