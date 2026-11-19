@@ -1,0 +1,68 @@
+name: Suggest an AI tool
+description: Recommend a useful AI tool for the directory
+title: "[Tool submission]: "
+labels: ["tool submission"]
+body:
+  - type: markdown
+    attributes:
+      value: "Thanks for helping the community discover useful tools. Please provide accurate, publicly verifiable information."
+  - type: input
+    id: name
+    attributes:
+      label: Tool name
+      placeholder: Example AI
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Official website
+      placeholder: https://example.com
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - Writing
+        - Coding
+        - Image
+        - Video
+        - Research
+        - Productivity
+        - Audio
+    validations:
+      required: true
+  - type: dropdown
+    id: access
+    attributes:
+      label: Pricing model
+      options:
+        - Free
+        - Freemium
+        - Paid
+        - Not sure
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: What does it do?
+      description: Write a short, neutral description in your own words.
+    validations:
+      required: true
+  - type: input
+    id: pricing_source
+    attributes:
+      label: Official pricing page (optional)
+      placeholder: https://example.com/pricing
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: I checked that this is the official website.
+          required: true
+        - label: I believe this entry is not already listed.
+          required: true
